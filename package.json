@@ -1,0 +1,33 @@
+{
+  "name": "payment-service",
+  "version": "2.1.0",
+  "description": "Invoice payment service (TypeScript + ESM)",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "tsx src/main.ts",
+    "seed": "tsx scripts/seed.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^5.0.1",
+    "ioredis": "^5.4.1",
+    "mongoose": "^8.5.0",
+    "tsx": "^4.19.0",
+    "uuid": "^11.0.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/ioredis-mock": "^8.2.7",
+    "@types/node": "^22.0.0",
+    "@types/supertest": "^6.0.2",
+    "ioredis-mock": "^8.9.0",
+    "mongodb-memory-server": "^10.1.0",
+    "supertest": "^7.0.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  }
+}
